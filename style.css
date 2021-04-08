@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    line-height: 1.2;
+    font-family: 'Roboto';
+}
+
+ul {
+    margin-left: 10px;
+}
+
+/* ul {list-style-type: disc;} */
+li {
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+    font-size: 18px;
+    padding-top: 2px;
+    font-weight: 300;
+}
+
+ul ul > li {
+    list-style-type: '- ';
+}
+
+a.disabled {
+    pointer-events: none;
+    color: grey;
+}
+
+.introContainer {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    z-index: 1;
+}
+
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.msgContainer {
+    width: 50%;
+    z-index: 1;
+}
+
+.introMsg {
+    /* position: absolute; */
+    font-size: 48px;
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+}
+
+#jobMsg {
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 40px;
+}
+
+.container h3 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.container h4 {
+    /* font-weight: 100; */
+}
+
+.edContainer {
+    height: 90vh;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+#edText {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#ucrLogo {
+    /* height: 200px; */
+}
+
+.skillSection {
+    padding: 10px 0px;
+    margin-left: 15px;
+}
+
+.project {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.description {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.appDescription, .hostMsg {
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    /* margin-top: 40px; */
+}
+
+.hostMsg {
+    color: red;
+}
+
+.appLinks {
+    display: flex;
+}
+
+.appLink {
+    border: 1px solid black;
+    /* font-family: inherit; */
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 10px;
+    padding: 10px;
+    transition: all 0.5s;
+    /* height: 50px; */
+    /* width: 200px; */
+}
+
+.appLink:hover {
+    background: #1c2a75;
+    color: white;
+}
+
+.screenshotContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appScreenshot {
+    height: auto;
+    width: 85%;
+    box-shadow: 10px 10px 30px #000;
+}
+
+/* .skillsList h3 {} */
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 48px;
+    color: white;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+  
+@keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+  
+@-moz-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+  
+@-webkit-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+  
+@-ms-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+  
+@-o-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
+.introVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}

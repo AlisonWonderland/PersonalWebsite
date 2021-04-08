@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./assets/cropped.ico" />
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Marcos Leandro - Web Developer</title>
+</head>
+<body>
+    <div class="introContainer">
+        <video class="introVid" autoplay muted loop playsinline>
+            <source src="./assets/bg.mp4" type="video/mp4">
+        </video>
+        
+        <div class="navbar">
+            <div class="nav">
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="https://docs.google.com/document/d/1gysl7OrHsLvQyE5OBaVEds5cK9OWbDkkTx8FNbcWY4Y/edit?usp=sharing" target="_blank">Resume</a>
+            </div>
+        </div>
+    
+        <div class="msgContainer">
+            <h1 class="introMsg">
+                Hi, I'm Marcos and I'm a full stack web developer.<span class="blinking-cursor">|</span>
+            </h1>
+            <div id="jobMsg">Currently looking for a job in the web dev and software engineering field.</div>
+            <div id="jobMsg">Contact me at mlean002@ucr.edu.</div>
+        </div>
+
+    </div>
+
+    <div id="education" class="container"> 
+        <h2>Education</h2>
+        <div class="edContainer">
+            <div>
+                <img id="ucrLogo" src="./assets/ucr-logo.jpg" alt="UC Riverside logo">
+            </div>
+            <div id="edText">
+                <div>
+                    Degree: Bachelors in Computer Science from UC Riverside
+                </div>
+                <div>
+                    Graduation Date: March 2021
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- this could be changed to be logos and names in grid format -->
+    <div id="skills" class="container">
+        <h2>Skills:</h2>
+        <div class="skillSection">
+            <div class="skillsList">
+                <h3>Programming Languages</h3>
+                    <h4 class="skillsSubHeader">Primary Languages(Used frequently):</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                    
+                    <h4 class="skillsSubHeader">Other Languages(In order from most to least used)</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Scala</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="skillSection">
+            <div class="skillsList">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Express</li>
+                    <li>Jest(Testing)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skillSection">
+            <div class="skillsList">
+                <h3> Web Platforms</h3>
+                    <ul>
+                        <li>AWS</li>
+                        <ul>
+                            <li>S3</li>
+                            <li>ElastiCache</li>
+                            <li>EC2</li>
+                            <li>Elastic Beanstalk</li>
+                            <li>Amplify</li>
+                            <li>Route 53</li>
+                        </ul> 
+                        <li>Heroku</li>   
+                    </ul>
+            </div>
+        </div>
+        <div class="skillSection">
+            <h3>Databases and Caching Systems</h3>
+            <ul>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>Redis</li>
+                <li>Memcached</li>
+            </ul>
+        </div>
+        <div class="skillSection">
+            <h3>Frontend Libraries</h3>
+            <ul>
+                <li>MaterialUI</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="projects" class="container">
+        <h1>Projects</h1>
+        <div class="project">
+            <div class="description">
+                <h3 class="appName">Image Board</h3>
+                <p class="appDescription">
+                    A web app where users can anonymously post messages and share images
+                    under certain thread topics. It currently supports jpg/jpeg, gif and webm 
+                    formatted media.
+                </p>
+                <p class="hostMsg">
+                    Currently in the process of transitioning from Memcached to Redis for caching
+                    because of complications with starting up Memcached on ElastiCache
+                </p>
+                <!-- <p>
+                    Tech Details: MERN stack app. It uses Redis to cache expensive API responses.
+                    It also uses an AWS S3 bucket to store and host images that are uploaded.
+                    Backend hosted using AWS Elastic Beanstalk. Frontend hosted using AWS Amplify.
+                </p> -->
+                <nav class="appLinks">
+                    <a href="https://github.com/AlisonWonderland/ImageBoard/tree/master" class="appLink" target="_blank">Github</a>
+                    <a class="appLink disabled" aria-disabled="true">Live website</a>
+                </nav>
+            </div>
+            <div class="screenshotContainer">
+                <img class="appScreenshot" src="./assets/imageboard.JPG" alt="screenshot of project">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="project">
+            <div class="description">
+                <h3 class="appName">Image Board Admin</h3>
+                <p class="appDescription">
+                    A CMS app for Image Board. It allows admins to delete posts/threads and add/remove admins
+                     using authentication routes built into the Image Board backend. UI is built with MaterialUI 
+                     React component library.
+                </p>
+                <p class="hostMsg">
+                    Currently in the process of transitioning from Memcached to Redis for caching
+                    because of complications with starting up Memcached on ElastiCache
+                </p>
+                <!-- Since Image Board doesn't allow users to delete posts,
+                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
+                <nav class="appLinks">
+                    <a href="https://github.com/AlisonWonderland/ImageBoard-Admin" class="appLink" target="_blank">Github</a>
+                    <a class="appLink disabled">Live website</a>
+                </nav>
+            </div>
+            <div class="screenshotContainer">
+                <img class="appScreenshot" src="./assets/imageboard_admin.JPG" alt="screenshot of project">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="project">
+            <div class="description">
+                <h3 class="appName">A Million Thanks (Senior Design Project)</h3>
+                <p class="appDescription">
+                    A group project for CS-179G, Project in CS(Databases), that was created for the charity A Million
+                    Thanks. I worked with three classmates and I was responsible for the initial design of the UI.
+                    I also helped create a dashboard and heatmap that showcased the stats of the mail.
+                </p>
+                <!-- Since Image Board doesn't allow users to delete posts,
+                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
+                <nav class="appLinks">
+                    <a href="https://github.com/CS-UCR/homeless-baby-bear" class="appLink" target="_blank">Github</a>
+                </nav>
+            </div>
+            <div class="screenshotContainer">
+                <img class="appScreenshot" src="https://raw.githubusercontent.com/CS-UCR/homeless-baby-bear/master/github_pics/292831576301172_.pic_hd.jpg?token=AKNKPWFGNRBF35TJPHGCKHK57WY2E" alt="screenshot of project">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="project">
+            <div class="description">
+                <h3 class="appName">Phoebe</h3>
+                <p class="appDescription">
+                    React app where users can upload photos of handwritten notes and papers and have
+                    the text extracted. The users can then edit the extracted text to add more text or
+                    fix issues with the extracted text. Also, there is an option to download the extracted 
+                    text in docx format. The text is extracted using Google Cloud Vision API. API requests are rate
+                    limited using Redis.
+                </p>
+                <p class="hostMsg">
+                    Accidently deleted EC2 instance that hosted the backend after trying to stop it.
+                    Backend should be back up in a couple of days(update 4/7/21) 
+                </p>
+                <!-- Since Image Board doesn't allow users to delete posts,
+                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
+                <nav class="appLinks">
+                    <a href="https://github.com/AlisonWonderland/Phoebe" class="appLink" target="_blank">Github</a>
+                    <a href="https://main.d3kmd9rcwzkzxd.amplifyapp.com/" class="appLink" target="_blank">Live website</a>
+                </nav>
+            </div>
+            <div class="screenshotContainer">
+                <img class="appScreenshot" src="./assets/phoebe.JPG" alt="screenshot of project">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="project">
+            <div class="description">
+                <h3 class="appName">Personal Website</h3>
+                <p class="appDescription">
+                    Portfolio website built without frameworks to showcase my projects.
+                </p>
+                <!-- Since Image Board doesn't allow users to delete posts,
+                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
+                <nav class="appLinks">
+                    <a href="https://github.com/AlisonWonderland/PersonalWebsite" class="appLink" target="_blank">Github</a>
+                </nav>
+            </div>
+            <div class="screenshotContainer">
+                <img class="appScreenshot" src="./assets/portfolio.JPG" alt="screenshot of project">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="project">
+            <div class="description">
+                <h3 class="appName">Nosleep Reader</h3>
+                <p class="appDescription">
+                    Website that fetches the top 10 stories from the <a href="https://www.reddit.com/r/nosleep/">Nosleep subreddit</a> 
+                    and presents them in a more readable format. Built with no frameworks.
+                </p>
+                <!-- Since Image Board doesn't allow users to delete posts,
+                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
+                <nav class="appLinks">
+                    <a href="https://github.com/AlisonWonderland/Websites/tree/master/Nosleep%20Reader" class="appLink" target="_blank">Github</a>
+                    <a href="./" class="appLink" target="_blank">Live website</a>
+                </nav>
+            </div>
+            <div class="screenshotContainer">
+                <img class="appScreenshot" src="./assets/nosleep.JPG" alt="screenshot of project">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
