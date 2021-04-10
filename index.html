@@ -126,7 +126,7 @@
             <div class="description">
                 <h3 class="appName">Image Board</h3>
                 <p class="appDescription">
-                    A web app where users can anonymously post messages and share images
+                    A MERN stack web app where users can anonymously post messages and share images
                     under certain thread topics. It currently supports jpg/jpeg, gif and webm 
                     formatted media.
                 </p>
@@ -145,7 +145,7 @@
                 </nav>
             </div>
             <div class="screenshotContainer">
-                <img class="appScreenshot" src="./assets/imageboard.JPG" alt="screenshot of project">
+                <img class="appScreenshot" loading="lazy" src="./assets/imageboard.JPG" alt="screenshot of project">
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@
             <div class="description">
                 <h3 class="appName">Image Board Admin</h3>
                 <p class="appDescription">
-                    A CMS app for Image Board. It allows admins to delete posts/threads and add/remove admins
+                    A MERN stack CMS app for Image Board. It allows admins to delete posts/threads and add/remove admins
                      using authentication routes built into the Image Board backend. UI is built with MaterialUI 
                      React component library.
                 </p>
@@ -163,15 +163,13 @@
                     Currently in the process of transitioning from Memcached to Redis for caching
                     because of complications with starting up Memcached on ElastiCache
                 </p>
-                <!-- Since Image Board doesn't allow users to delete posts,
-                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
                 <nav class="appLinks">
                     <a href="https://github.com/AlisonWonderland/ImageBoard-Admin" class="appLink" target="_blank">Github</a>
                     <a class="appLink disabled">Live website</a>
                 </nav>
             </div>
             <div class="screenshotContainer">
-                <img class="appScreenshot" src="./assets/imageboard_admin.JPG" alt="screenshot of project">
+                <img class="appScreenshot" loading="lazy" src="./assets/imageboard_admin.JPG" alt="screenshot of project">
             </div>
         </div>
     </div>
@@ -182,17 +180,16 @@
                 <h3 class="appName">A Million Thanks (Senior Design Project)</h3>
                 <p class="appDescription">
                     A group project for CS-179G, Project in CS(Databases), that was created for the charity A Million
-                    Thanks. I worked with three classmates and I was responsible for the initial design of the UI.
-                    I also helped create a dashboard and heatmap that showcased the stats of the mail.
+                    Thanks. I worked with three classmates and I was responsible for the initial design of the UI using
+                    Bootstrap to make mock ups. I also helped create a dashboard and heatmap that showcased the stats of 
+                    the mail.
                 </p>
-                <!-- Since Image Board doesn't allow users to delete posts,
-                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
                 <nav class="appLinks">
                     <a href="https://github.com/CS-UCR/homeless-baby-bear" class="appLink" target="_blank">Github</a>
                 </nav>
             </div>
             <div class="screenshotContainer">
-                <img class="appScreenshot" src="https://raw.githubusercontent.com/CS-UCR/homeless-baby-bear/master/github_pics/292831576301172_.pic_hd.jpg?token=AKNKPWFGNRBF35TJPHGCKHK57WY2E" alt="screenshot of project">
+                <img class="appScreenshot" loading="lazy" src="./assets/292831576301172_.pic_hd.jpg" alt="screenshot of project">
             </div>
         </div>
     </div>
@@ -212,15 +209,13 @@
                     Accidently deleted EC2 instance that hosted the backend after trying to stop it.
                     Backend should be back up in a couple of days(update 4/7/21) 
                 </p>
-                <!-- Since Image Board doesn't allow users to delete posts,
-                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
                 <nav class="appLinks">
                     <a href="https://github.com/AlisonWonderland/Phoebe" class="appLink" target="_blank">Github</a>
                     <a href="https://main.d3kmd9rcwzkzxd.amplifyapp.com/" class="appLink" target="_blank">Live website</a>
                 </nav>
             </div>
             <div class="screenshotContainer">
-                <img class="appScreenshot" src="./assets/phoebe.JPG" alt="screenshot of project">
+                <img class="appScreenshot" loading="lazy" src="./assets/phoebe.JPG" alt="screenshot of project">
             </div>
         </div>
     </div>
@@ -232,14 +227,29 @@
                 <p class="appDescription">
                     Portfolio website built without frameworks to showcase my projects.
                 </p>
-                <!-- Since Image Board doesn't allow users to delete posts,
-                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
                 <nav class="appLinks">
                     <a href="https://github.com/AlisonWonderland/PersonalWebsite" class="appLink" target="_blank">Github</a>
                 </nav>
             </div>
             <div class="screenshotContainer">
-                <img class="appScreenshot" src="./assets/portfolio.JPG" alt="screenshot of project">
+                <img class="appScreenshot" loading="lazy" src="./assets/portfolio.JPG" alt="screenshot of project">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="project">
+            <div class="description">
+                <h3 class="appName">Midnight</h3>
+                <p class="appDescription">
+                    An organization signup website built using Express and a MySQL database. 
+                </p>
+                <nav class="appLinks">
+                    <a href="https://github.com/AlisonWonderland/Express-Apps/tree/master/join_us" class="appLink" target="_blank">Github</a>
+                </nav>
+            </div>
+            <div class="screenshotContainer">
+                <img class="appScreenshot" loading="lazy" src="./assets/68747470733a2f2f692e696d6775722e636f6d2f557053674a31412e706e67.png" alt="screenshot of project">
             </div>
         </div>
     </div>
@@ -252,17 +262,21 @@
                     Website that fetches the top 10 stories from the <a href="https://www.reddit.com/r/nosleep/">Nosleep subreddit</a> 
                     and presents them in a more readable format. Built with no frameworks.
                 </p>
-                <!-- Since Image Board doesn't allow users to delete posts,
-                Image Board Admin is used for deleting comments and threads deemed unneccesary or innapropiate. -->
                 <nav class="appLinks">
                     <a href="https://github.com/AlisonWonderland/Websites/tree/master/Nosleep%20Reader" class="appLink" target="_blank">Github</a>
-                    <a href="./" class="appLink" target="_blank">Live website</a>
+                    <a href="./NosleepReader/index.html" class="appLink" target="_blank">Live website</a>
                 </nav>
             </div>
             <div class="screenshotContainer">
-                <img class="appScreenshot" src="./assets/nosleep.JPG" alt="screenshot of project">
+                <img class="appScreenshot" loading="lazy" src="./assets/nosleep.JPG" alt="screenshot of project">
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<!-- location ~* \.(?:ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|css|rss|atom|js|jpg|jpeg|gif|png|ico)$ {
+    expires 30d;
+    add_header Pragma public;
+    add_header Cache-Control "public";
+} -->
