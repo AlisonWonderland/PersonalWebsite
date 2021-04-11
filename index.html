@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/cropped.ico" />
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/406b77ded1.js" crossorigin="anonymous"></script>
     
     <title>Marcos Leandro - Web Developer</title>
 </head>
@@ -19,8 +20,8 @@
         
         <div class="navbar">
             <div class="nav">
-                <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="https://docs.google.com/document/d/1gysl7OrHsLvQyE5OBaVEds5cK9OWbDkkTx8FNbcWY4Y/edit?usp=sharing" target="_blank">Resume</a>
             </div>
@@ -30,10 +31,13 @@
             <h1 class="introMsg">
                 Hi, I'm Marcos and I'm a full stack web developer.<span class="blinking-cursor">|</span>
             </h1>
-            <div id="jobMsg">Currently looking for a job in the web dev and software engineering field.</div>
-            <div id="jobMsg">Contact me at mlean002@ucr.edu.</div>
+            <div class="jobMsg">Currently looking for a job in the web dev and software engineering field.</div>
+            <div class="jobMsg">Contact me at mlean002@ucr.edu.</div>
         </div>
 
+        <a class="iconLink" href="https://github.com/AlisonWonderland" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
     </div>
 
     <div id="education" class="container"> 
@@ -43,12 +47,8 @@
                 <img id="ucrLogo" src="./assets/ucr-logo.jpg" alt="UC Riverside logo">
             </div>
             <div id="edText">
-                <div>
-                    Degree: Bachelors in Computer Science from UC Riverside
-                </div>
-                <div>
-                    Graduation Date: March 2021
-                </div>
+                <p>Degree: Bachelors in Computer Science from UC Riverside</p>
+                <p>Graduation Date: March 2021</p>
             </div>
         </div>
     </div>
@@ -130,10 +130,10 @@
                     under certain thread topics. It currently supports jpg/jpeg, gif and webm 
                     formatted media.
                 </p>
-                <p class="hostMsg">
+                <!-- <p class="hostMsg">
                     Currently in the process of transitioning from Memcached to Redis for caching
                     because of complications with starting up Memcached on ElastiCache
-                </p>
+                </p> -->
                 <!-- <p>
                     Tech Details: MERN stack app. It uses Redis to cache expensive API responses.
                     It also uses an AWS S3 bucket to store and host images that are uploaded.
@@ -141,7 +141,7 @@
                 </p> -->
                 <nav class="appLinks">
                     <a href="https://github.com/AlisonWonderland/ImageBoard/tree/master" class="appLink" target="_blank">Github</a>
-                    <a class="appLink disabled" aria-disabled="true">Live website</a>
+                    <!-- <a class="appLink disabled" aria-disabled="true">Live website</a> -->
                 </nav>
             </div>
             <div class="screenshotContainer">
@@ -159,13 +159,13 @@
                      using authentication routes built into the Image Board backend. UI is built with MaterialUI 
                      React component library.
                 </p>
-                <p class="hostMsg">
+                <!-- <p class="hostMsg">
                     Currently in the process of transitioning from Memcached to Redis for caching
                     because of complications with starting up Memcached on ElastiCache
-                </p>
+                </p> -->
                 <nav class="appLinks">
                     <a href="https://github.com/AlisonWonderland/ImageBoard-Admin" class="appLink" target="_blank">Github</a>
-                    <a class="appLink disabled">Live website</a>
+                    <!-- <a class="appLink disabled">Live website</a> -->
                 </nav>
             </div>
             <div class="screenshotContainer">
@@ -259,7 +259,7 @@
             <div class="description">
                 <h3 class="appName">Nosleep Reader</h3>
                 <p class="appDescription">
-                    Website that fetches the top 10 stories from the <a href="https://www.reddit.com/r/nosleep/">Nosleep subreddit</a> 
+                    Website that fetches the top 10 stories from the <a href="https://www.reddit.com/r/nosleep/" target="_blank">Nosleep subreddit</a> 
                     and presents them in a more readable format. Built with no frameworks.
                 </p>
                 <nav class="appLinks">
@@ -274,9 +274,3 @@
     </div>
 </body>
 </html>
-
-<!-- location ~* \.(?:ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|css|rss|atom|js|jpg|jpeg|gif|png|ico)$ {
-    expires 30d;
-    add_header Pragma public;
-    add_header Cache-Control "public";
-} -->
